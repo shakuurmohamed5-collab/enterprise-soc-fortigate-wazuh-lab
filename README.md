@@ -109,7 +109,7 @@ config firewall policy
     next
 end
 ```
-
+![FortiGate Interfaces](Images/fortigate-interfaces.png)
 ---
 
 ## 📊 Wazuh Deployment
@@ -122,6 +122,7 @@ end
   * Ubuntu Server
 
 Agents successfully appear as **Active** in dashboard.
+
 
 ---
 
@@ -138,7 +139,7 @@ After network changes, agents disconnected. Fix applied:
 * Restarted agent services
 
 ✅ Agents reconnected successfully
-
+![SOC Lab Network Topology](images/wazuh-agents.png)
 ---
 
 ## 📡 FortiGate → Wazuh Syslog Integration
