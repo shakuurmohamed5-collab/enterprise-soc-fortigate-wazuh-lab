@@ -123,7 +123,7 @@ end
 
 Agents successfully appear as **Active** in dashboard.
 
-
+![SOC Lab wazuh-agents](Images/wazuh-agents.png)
 ---
 
 ## 🔄 Agent Troubleshooting Performed
@@ -139,9 +139,39 @@ After network changes, agents disconnected. Fix applied:
 * Restarted agent services
 
 ✅ Agents reconnected successfully
-![SOC Lab Network Topology](images/wazuh-agents.png)
+
+
+
 ---
 
+📊Attack Simulation: Brute-Force from Kali
+
+To verify the SOC environment, a controlled brute-force attack was performed from the Kali Linux attacker machine (10.10.10.128):
+
+Targeted the Ubuntu server via SSH
+
+Generated failed login attempts using Hydra / manual password guessing
+
+Observed Wazuh detect and log the events in real-time on the dashboard
+
+
+![Brute Force from Kali](Images/kali-attack.png)
+![Wazuh Dashboard Alerts](Images/wazuh-alerts.png)
+
+
+Wazuh correctly identified the failed authentication attempts
+
+Alerts include:
+
+Source IP (Kali)
+
+Destination IP (Ubuntu server)
+
+Action (Failed SSH login)
+
+Policy / rule triggered (sshd: authentication failed)
+
+This proves that the FortiGate firewall + Wazuh SIEM integration is functional and capable of detecting security events within the simulated enterprise network.
 ## 📡 FortiGate → Wazuh Syslog Integration
 
 Correct configuration is critical:
@@ -181,7 +211,7 @@ Check logs on Wazuh:
 ```
 tail -f /var/ossec/logs/alerts/alerts.log
 ```
-
+![SOC Lab wazuh-discover](Images/wazuh-discover fortigate.png)
 Verify:
 
 * Source IP
@@ -220,8 +250,7 @@ Lab design was adapted to work within these limits.
 ✔ Wazuh Manager operational
 ✔ Agents connected
 ✔ Logging functional
-❌ Active Directory not yet implemented
-❌ Attack simulation in progress
+✔ Attack simulation in progress
 
 ---
 
@@ -230,7 +259,6 @@ Lab design was adapted to work within these limits.
 * Active Directory deployment
 * Windows domain logging
 * FortiGate advanced logging
-* Attack simulations (Brute force, scanning, etc.)
 * Custom Wazuh rules
 * Detection engineering exercises
 
