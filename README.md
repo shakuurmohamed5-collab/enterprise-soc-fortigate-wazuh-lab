@@ -89,7 +89,7 @@ This lab helps practice:
 * Port1 → WAN (VMware NAT)
 * Port2 → LAN (Kali attacker network)
 * Port3 → Servers network (Wazuh, Windows, Ubuntu)
-
+![FortiGate Interfaces](Images/fortigate-interfaces.png)
 ### Firewall Policies
 
 | Policy        | Source → Destination | NAT      | Logging      |
