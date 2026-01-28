@@ -60,6 +60,9 @@ This lab helps practice:
 | WAN     | Internet (VMware NAT)                 | Untrusted   |
 | LAN     | User / Attacker network               | Medium      |
 | Servers | Critical systems (Wazuh, AD, servers) | High        |
+## Network Topology
+
+![SOC Lab Network Topology](images/network-topology.png)
 
 ---
 
