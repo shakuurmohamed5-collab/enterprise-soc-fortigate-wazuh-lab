@@ -1,21 +1,5 @@
-# enterprise-soc-fortigate-wazuh-lab
-
-
 > **Enterprise SOC & Network Security Lab (FortiGate + Wazuh)**
 
-Repository name:
-
-```
-enterprise-soc-fortigate-wazuh-lab
-```
-
----
-
-# ✅ Final Combined GitHub README.md
-
-You can paste everything below directly into your GitHub README.md:
-
----
 
 # Enterprise SOC & Network Security Lab
 
