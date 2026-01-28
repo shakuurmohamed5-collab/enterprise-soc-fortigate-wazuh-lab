@@ -62,7 +62,7 @@ This lab helps practice:
 | Servers | Critical systems (Wazuh, AD, servers) | High        |
 ## Network Topology
 
-![SOC Lab Network Topology](./images/network-topology.png)
+![SOC Lab Network Topology](./Images/network-topology.png)
 
 ---
 
