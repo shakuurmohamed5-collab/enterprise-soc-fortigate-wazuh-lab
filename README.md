@@ -1,6 +1,5 @@
 # enterprise-soc-fortigate-wazuh-lab
 
-# ✅ Final Project Title (Use this on GitHub)
 
 > **Enterprise SOC & Network Security Lab (FortiGate + Wazuh)**
 
