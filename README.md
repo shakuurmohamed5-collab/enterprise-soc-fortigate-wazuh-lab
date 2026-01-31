@@ -93,7 +93,7 @@ config firewall policy
     next
 end
 ```
-![FortiGate Interfaces](Images/fortigate-interfaces.png)
+![FortiGate Interfaces](Images/fortigate-policies.png)
 ---
 
 ## 📊 Wazuh Deployment
